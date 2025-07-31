@@ -1,0 +1,544 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+
+
+}
+
+
+.fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+
+}
+
+video {
+    height: 1080px;
+    width: 1920px;
+    position: absolute;
+    z-index: 0;
+    left: -10%;
+    top: -40%
+}
+
+
+
+.transp {
+    background: radial-gradient(circle, rgb(0, 0, 0, 0.2) 1%, rgba(0, 0, 0, 1) 100%);
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    z-index: 1;
+    top: -10%;
+    left: -10%;
+
+}
+
+
+
+
+.bmwlogo {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    z-index: 2;
+    opacity: 1;
+    transition: 1s;
+
+}
+
+.bmwlogob {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    z-index: 2;
+    opacity: 0;
+    transition: 1s;
+
+}
+
+
+.ttl {
+    color: white;
+    position: absolute;
+    z-index: 3;
+    top: 35%;
+    left: 35%;
+    text-align: center;
+
+}
+
+
+
+.scroll-div {
+    background: linear-gradient(0, rgba(0, 0, 0, 1), black, black, rgba(0, 0, 0, 0));
+    position: relative;
+    z-index: 5;
+    margin-top: 100vh;
+    height: 330vh;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+
+
+
+
+}
+
+.scroll-div.visble {
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+.black-div {
+    color: white;
+    position: absolute;
+    top: 1000px;
+    left: 340px;
+    text-align: center;
+
+
+
+
+}
+
+
+
+.black-div p {
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+    position: fixed;
+    left: 565px;
+    top: 990px;
+
+}
+
+
+.black-div h1 {
+    top: 900px;
+    position: fixed;
+}
+
+.road {
+    background: linear-gradient(-130deg, rgba(128, 128, 128, 0.4) 5%, rgb(77, 77, 77) 15%, rgba(128, 128, 128, 0.4)20%, rgb(77, 77, 77) 25%, rgba(128, 128, 128, 0.4)40%, rgb(77, 77, 77) 55%, rgba(128, 128, 128, 0.4)60%, rgb(77, 77, 77) 75%, rgba(128, 128, 128, 0.4)80%, rgb(77, 77, 77)95%, rgba(128, 128, 128, 0.4)100%);
+    width: 1500px;
+    height: 90vh;
+    position: fixed;
+    top: 1100px;
+    left: 10px;
+    clip-path: polygon(100% 0, 0 80%, 0 100%, 100% 20%);
+
+
+
+
+}
+
+
+.light1 {
+    background-color: rgb(49, 49, 49);
+    width: 7px;
+    height: 15vh;
+    position: fixed;
+    top: 1450px;
+    left: 40px;
+}
+
+
+.lamp1 {
+    background: linear-gradient(to bottom, rgb(49, 49, 49), yellow);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+}
+
+
+.dhaw1 {
+    background: linear-gradient(to bottom, rgba(255, 255, 0, 0.63), rgba(255, 255, 0, 0));
+    width: 40px;
+    height: 100px;
+    top: 1465px;
+    left: 28px;
+    position: fixed;
+    clip-path: polygon(42% 0, 0 100%, 100% 100%, 57% 0);
+
+}
+
+
+.light2 {
+    background-color: rgb(49, 49, 49);
+    width: 7px;
+    height: 15vh;
+    position: fixed;
+    top: 1350px;
+    left: 340px;
+}
+
+
+.lamp2 {
+    background: linear-gradient(to bottom, rgb(49, 49, 49), yellow);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+}
+
+.dhaw2 {
+    background: linear-gradient(to bottom, rgba(255, 255, 0, 0.63), rgba(255, 255, 0, 0));
+    width: 40px;
+    height: 100px;
+    top: 1365px;
+    left: 328px;
+    position: fixed;
+    clip-path: polygon(42% 0, 0 100%, 100% 100%, 57% 0);
+
+}
+
+
+.light3 {
+    background-color: rgb(49, 49, 49);
+    width: 7px;
+    height: 15vh;
+    position: fixed;
+    top: 1250px;
+    left: 640px;
+}
+
+
+.lamp3 {
+    background: linear-gradient(to bottom, rgb(49, 49, 49), yellow);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+}
+
+
+.dhaw3 {
+    background: linear-gradient(to bottom, rgba(255, 255, 0, 0.63), rgba(255, 255, 0, 0));
+    width: 40px;
+    height: 100px;
+    top: 1265px;
+    left: 628px;
+    position: fixed;
+    clip-path: polygon(42% 0, 0 100%, 100% 100%, 57% 0);
+
+}
+
+
+
+
+.light4 {
+    background-color: rgb(49, 49, 49);
+    width: 7px;
+    height: 15vh;
+    position: fixed;
+    top: 1650px;
+    left: 180px;
+
+}
+
+
+.lamp4 {
+    background: linear-gradient(to bottom, rgb(49, 49, 49), yellow);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+}
+
+
+.dhaw4 {
+    background: linear-gradient(to bottom, rgba(255, 255, 0, 0.63), rgba(255, 255, 0, 0));
+    width: 40px;
+    height: 100px;
+    top: 1665px;
+    left: 168px;
+    position: fixed;
+    clip-path: polygon(42% 0, 0 100%, 100% 100%, 57% 0);
+
+}
+
+.light5 {
+    background-color: rgb(49, 49, 49);
+    width: 7px;
+    height: 15vh;
+    position: fixed;
+    top: 1550px;
+    left: 480px;
+
+}
+
+
+.lamp5 {
+    background: linear-gradient(to bottom, rgb(49, 49, 49), yellow);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+}
+
+
+.dhaw5 {
+    background: linear-gradient(to bottom, rgba(255, 255, 0, 0.63), rgba(255, 255, 0, 0));
+    width: 40px;
+    height: 100px;
+    top: 1565px;
+    left: 468px;
+    position: fixed;
+    clip-path: polygon(42% 0, 0 100%, 100% 100%, 57% 0);
+
+}
+
+
+.light6 {
+    background-color: rgb(49, 49, 49);
+    width: 7px;
+    height: 15vh;
+    position: fixed;
+    top: 1450px;
+    left: 780px;
+
+}
+
+
+.lamp6 {
+    background: linear-gradient(to bottom, rgb(49, 49, 49), yellow);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+}
+
+
+.dhaw6 {
+    background: linear-gradient(to bottom, rgba(255, 255, 0, 0.63), rgba(255, 255, 0, 0));
+    width: 40px;
+    height: 100px;
+    top: 1465px;
+    left: 768px;
+    position: fixed;
+    clip-path: polygon(42% 0, 0 100%, 100% 100%, 57% 0);
+
+}
+
+
+.light7 {
+    background-color: rgb(49, 49, 49);
+    width: 7px;
+    height: 15vh;
+    position: fixed;
+    top: 1350px;
+    left: 1080px;
+
+}
+
+
+.lamp7 {
+    background: linear-gradient(to bottom, rgb(49, 49, 49), yellow);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+}
+
+
+.dhaw7 {
+    background: linear-gradient(to bottom, rgba(255, 255, 0, 0.63), rgba(255, 255, 0, 0));
+    width: 40px;
+    height: 100px;
+    top: 1365px;
+    left: 1068px;
+    position: fixed;
+    clip-path: polygon(42% 0, 0 100%, 100% 100%, 57% 0);
+
+}
+
+.light8 {
+    background-color: rgb(49, 49, 49);
+    width: 7px;
+    height: 15vh;
+    position: fixed;
+    top: 1250px;
+    left: 1380px;
+
+}
+
+
+.lamp8 {
+    background: linear-gradient(to bottom, rgb(49, 49, 49), yellow);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+}
+
+
+.dhaw8 {
+    background: linear-gradient(to bottom, rgba(255, 255, 0, 0.63), rgba(255, 255, 0, 0));
+    width: 40px;
+    height: 100px;
+    top: 1265px;
+    left: 1368px;
+    position: fixed;
+    clip-path: polygon(42% 0, 0 100%, 100% 100%, 57% 0);
+
+}
+
+.light9 {
+    background-color: rgb(49, 49, 49);
+    width: 7px;
+    height: 15vh;
+    position: fixed;
+    top: 1150px;
+    left: 940px;
+}
+
+
+.lamp9 {
+    background: linear-gradient(to bottom, rgb(49, 49, 49), yellow);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+}
+
+
+.dhaw9 {
+    background: linear-gradient(to bottom, rgba(255, 255, 0, 0.63), rgba(255, 255, 0, 0));
+    width: 40px;
+    height: 100px;
+    top: 1165px;
+    left: 928px;
+    position: fixed;
+    clip-path: polygon(42% 0, 0 100%, 100% 100%, 57% 0);
+
+}
+
+
+
+.light10 {
+    background-color: rgb(49, 49, 49);
+    width: 7px;
+    height: 15vh;
+    position: fixed;
+    top: 1050px;
+    left: 1240px;
+}
+
+
+.lamp10 {
+    background: linear-gradient(to bottom, rgb(49, 49, 49), yellow);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+}
+
+
+.dhaw10 {
+    background: linear-gradient(to bottom, rgba(255, 255, 0, 0.63), rgba(255, 255, 0, 0));
+    width: 40px;
+    height: 100px;
+    top: 1065px;
+    left: 1228px;
+    position: fixed;
+    clip-path: polygon(42% 0, 0 100%, 100% 100%, 57% 0);
+
+}
+
+
+
+
+
+.mini-car {
+    position: relative;
+    z-index: 999;
+    position: absolute;
+    right: -2000px;
+    top: -150px;
+    width: 150px;
+    height: auto;
+    transition: all 4s ease;
+    opacity: 0.5;
+}
+
+
+.mini-car.repl {
+    top: 800px;
+    right: 800px;
+    opacity: 1;
+}
+
+
+
+.black-div p {
+    font-size: 20px;
+
+}
+
+.spc-p {
+    margin-top: 750px;
+    right: 500px;
+    line-height: 2;
+
+
+}
+
+
+
+
+.scroll-div2 {
+    background: linear-gradient(0,white, rgb(255, 255, 255), rgb(255, 255, 255), rgba(0, 0, 0, 1));
+    position: relative;
+    z-index: 5;
+    margin-top: 0vh;
+    padding: 50px;
+    height: 700vh;
+    opacity: 0;
+    transition: all 1s ease;
+
+
+
+}
+
+
+
+.scroll-div2.visible {
+    opacity: 1;
+}
+
+
+.animg {
+    width: 50000px;
+    height: auto;
+    position: fixed;
+    position: absolute;
+    z-index: 999;
+    top: -50000px;
+    left: -40000px;
+    transition: all 7s ease;
+
+}
+
+.animg.animation{
+    width: 2500px;
+    top: 4700px;
+    left: -450px;
+}
